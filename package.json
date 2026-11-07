@@ -1,0 +1,28 @@
+{
+  "name": "magpie-account-reauth-notify",
+  "version": "0.1.0",
+  "description": "Passive Codex account sign-in alerts for Magpie: periodic local file reads only",
+  "type": "module",
+  "main": "./index.mjs",
+  "files": ["index.mjs", "src", "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "docs/account-reauth-notify-design.md"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/onepiece-studio/magpie-auth-notify.git" },
+  "homepage": "https://github.com/onepiece-studio/magpie-auth-notify#readme",
+  "bugs": { "url": "https://github.com/onepiece-studio/magpie-auth-notify/issues" },
+  "engines": { "bun": ">=1.4.2" },
+  "scripts": { "test": "bun test", "check": "bun test" },
+  "keywords": ["magpie-plugin", "codex", "notification"],
+  "magpie": {
+    "options": {
+      "instanceName": "Magpie",
+      "pollIntervalSeconds": 30,
+      "confirmSeconds": 2,
+      "accountAllowlist": [],
+      "accountIgnorelist": [],
+      "accountAliases": {},
+      "notifyRecovery": false,
+      "reminderHours": 0,
+      "channels": []
+    }
+  }
+}
